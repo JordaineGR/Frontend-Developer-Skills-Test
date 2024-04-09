@@ -12,9 +12,56 @@ li {
   position: relative;
   top: -780px;
 }
+.pg-1-bg {
+  position: relative;
+}
+.history-paragraph {
+  position: absolute;
+  top: 100px;
+  left: 300px;
+}
+.history-title {
+  position: absolute;
+  top: 130px;
+  left: 175px;
+}
+.history-text {
+  margin-left: 120px;
+  margin-top: -70px;
+}
 .navbar-1 a {
   color: white;
   font-family: "Lato", sans-serif;
   font-size: 12px;
   padding: 0 20px;
+}
+.navbar-2 a {
+  color: #404f6c;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  padding: 0 20px;
+}
+nav p {
+  font-family: "Bebas Neue", sans-serif;
+  line-height: 22px;
+  font-size: 30px;
+}
+.la-mountains {
+  margin-left: -900px;
+  color: #404f6c;
+}
+.number {
+  font-family: "Oswald", sans-serif;
+  font-size: 180px;
+  color: #6e7d99;
+}
+.history-title {
+  color: #414f6b;
+  font-size: 42px;
+  font-family: "Oswald", sans-serif;
+}
+.history-text {
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  line-height: 26px;
 }

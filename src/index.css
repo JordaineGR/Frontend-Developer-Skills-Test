@@ -1,155 +1,236 @@
-.container li {
-  display: inline;
-  list-style: none;
+/* Main Styling*/
+:root {
+  --primary-font: "Lato", sans-serif;
+  --secondary-font: "Oswald", sans-serif;
+  --primary-color: #414f6b;
 }
-
+.navbar-1 a,
+.navbar-2 a {
+  font-family: var(--primary-font);
+  font-weight: 700;
+  font-style: italic;
+  font-size: 12px;
+  padding: 0 20px;
+}
+.title {
+  color: var(--primary-color);
+  font-family: var(--secondary-font);
+  font-size: 36px;
+}
+.text {
+  font-family: var(--primary-font);
+  font-weight: 700;
+}
+/* Homepage Section */
 .parent {
   position: relative;
 }
 .homepage-bg {
   position: relative;
 }
+.container li {
+  display: inline;
+  list-style: none;
+}
 .navbar-1 {
   position: relative;
   top: -780px;
+  max-width: 900px;
+  margin-left: 15%;
 }
-.pg-1-bg {
-  position: relative;
-}
-.history-paragraph {
-  position: absolute;
-  top: 40px;
-  left: 300px;
-}
-.history-title {
-  position: absolute;
-  top: 130px;
-  left: 175px;
-}
-.history-text {
-  margin-left: 120px;
-  margin-top: -70px;
-}
+
 .navbar-1 a {
   color: white;
-  font-family: "Lato", sans-serif;
-  font-size: 12px;
-  padding: 0 20px;
 }
+/* History Section*/
 .navbar-2 a {
-  color: #404f6c;
-  font-family: "Lato", sans-serif;
-  font-size: 12px;
-  padding: 0 20px;
+  color: var(--primary-color);
+  margin-top: -20px;
 }
-nav p {
+.la-mountains {
   font-family: "Bebas Neue", sans-serif;
   line-height: 22px;
   font-size: 30px;
+  margin-right: 550px;
 }
-.la-mountains {
-  margin-left: -900px;
-  color: #404f6c;
+.losangeles {
+  color: #4d4d4d;
+}
+.mountains {
+  color: var(--primary-color);
+}
+
+.history-paragraph {
+  position: absolute;
+  top: 50px;
+  left: 300px;
+}
+.history-paragraph .title {
+  position: absolute;
+  top: 115px;
+  left: 155px;
+}
+.history-paragraph .text {
+  margin: -60px 0 0 85px;
+  padding-right: 300px;
 }
 .number {
-  font-family: "Oswald", sans-serif;
-  font-size: 180px;
-  color: #6e7d99;
-}
-.history-title {
-  color: #414f6b;
-  font-size: 42px;
-  font-family: "Oswald", sans-serif;
-}
-.history-text {
-  font-family: "Lato", sans-serif;
-  font-size: 15px;
-  line-height: 26px;
+  font-family: var(--secondary-font);
+  font-size: 160px;
+  color: rgb(65, 79, 107, 0.5);
 }
 .carousel {
   position: absolute;
   bottom: 0px;
-
-  background-color: rgba(65, 77, 101, 0.8);
-  padding: 20px 42.7%;
+  padding: 10px;
+  padding-left: 42%;
+  background-color: rgba(65, 79, 107, 0.7);
 }
-.carousel-indicators li {
-  width: 10px;
-  height: 10px;
-  border-radius: 100%;
+.carousel-indicators button {
+  border: 1px !important;
+  width: 5px !important;
+  height: 5px !important;
+  border-radius: 5px !important;
 }
+.carousel-inner {
+  padding: 15px 0 30px 0;
+}
+/* Climb Section*/
 .climb-paragraph {
-  background-color: white;
   display: flex;
-  padding-left: 300px;
-  margin-top: -40px;
-  margin-bottom: -220px;
+  padding-left: 320px;
+  margin: -30px 0 -210px 0;
 }
-.climb-title {
-  color: #414f6b;
-  font-size: 42px;
-  font-family: "Oswald", sans-serif;
-  margin-top: 130px;
-  margin-left: -40px;
+.climb-paragraph .title {
+  margin: 115px 0 0 -35px;
   padding-right: 20px;
 }
-.climb-text {
-  font-family: "Lato", sans-serif;
-  font-size: 15px;
-  line-height: 26px;
-  top: 100px;
-}
-
-.climb-text {
-  margin-top: 130px;
-  margin-right: 300px;
+.climb-paragraph .text {
+  margin: 95px 290px 0 15px;
 }
 .mountain-nav {
-  background-color: #414f6b;
-  padding: 15px 0 15px 300px;
-  font-family: "Oswald", sans-serif;
+  background-color: var(--primary-color);
+  font-family: var(--secondary-font);
+  padding: 0 0 0 300px;
   position: relative;
   margin-top: 180px;
+  font-size: 20px;
 }
-.pg-2-bg {
-  position: relative;
+.nav-link {
+  color: #a0a7b5 !important;
+}
+.mountain-nav button.active {
+  color: var(--primary-color) !important;
+  background-color: #a0a7b5 !important;
+  text-decoration: underline;
+}
+.schedule {
+  font-family: var(--secondary-font);
+  font-size: 32px;
+  color: var(--primary-color);
+  margin-bottom: 0;
+}
+.schedule-div {
+  background-color: rgba(245, 247, 250, 0.6);
+  top: 2125px;
+  left: 320px;
+  position: absolute;
+  padding: 20px 40px;
+}
+.schedule-div ul {
+  list-style: none;
+  font-family: var(--primary-font);
+  font-weight: 700;
+  padding: 0;
+}
+/* Mobile Accordion */
+.accordion-body {
+  padding: 0 !important;
+}
+.accordion .schedule-div {
+  padding: 0 10px;
+  margin: -1120px 0 0 -300px;
+}
+/* Footer */
+footer {
+  padding: 15px 0 15px 0;
+  display: flex;
+  justify-content: center;
+  background: var(--primary-color);
+  line-height: 24px;
+  color: #63769d;
 }
 .footer-text {
-  color: #63769d;
   font-family: "Bebas Neue", sans-serif;
-  line-height: 24px;
   font-size: 30px;
   margin-top: -50px;
   margin-left: 50px;
 }
-footer {
-  padding-left: 300px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  display: flex;
-  background: #404f6c;
-}
 .copyright {
-  font-family: "Lato", sans-serif;
-  font-size: 15px;
-  margin-top: -50px;
-  margin-left: 600px;
-  color: #63769d;
-  font-weight: bold;
+  font-family: var(--primary-font);
+  font-weight: 700;
+  font-size: 12px;
+  font-style: italic;
+  margin: -50px 0 0 700px;
 }
-.schedule-li {
-  list-style: none;
-  font-family: "Lato", sans-serif;
-  font-size: 21px;
-}
-.schedule {
-  font-family: "Oswald", sans-serif;
-  font-size: 42px;
-}
-.schedule-div {
-  background-color: rgba(245, 247, 250, 0.7);
-  top: 2200px;
-  left: 340px;
-  position: absolute;
-  padding: 20px;
+/* Responsive Display */
+@media (max-width: 900px) {
+  .navbar-1 a,
+  .navbar-2 a {
+    padding: 0 10px;
+  }
+  .navbar-1 {
+    top: -200px;
+    margin-left: 0;
+  }
+  .navbar-2 {
+    margin-top: -20px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between !important;
+  }
+  .la-mountains {
+    margin-right: 0px;
+  }
+  .number {
+    font-size: 50px;
+    padding: 20px 0 0 20px;
+    margin: 0;
+  }
+  .carousel {
+    position: relative;
+    padding-left: 25%;
+  }
+
+  .history-paragraph {
+    padding-left: 10px;
+    margin: 0 0 0 -300px;
+    font-size: 15px;
+  }
+  .history-paragraph .title {
+    top: 12%;
+    left: 22%;
+  }
+  .history-paragraph .text {
+    margin: 0;
+    padding: 10px;
+    background-color: rgb(255, 255, 255, 0.4);
+  }
+  .climb-paragraph {
+    padding-left: 10px;
+    margin: 10px 0;
+    font-size: 15px;
+  }
+  .climb-paragraph .title {
+    margin: 35px 0 0 0px;
+    padding-right: 0;
+  }
+  .climb-paragraph .text {
+    margin: 100px 0px 0 -170px;
+    padding: 10px;
+  }
+  .copyright {
+    margin: 0;
+    padding: 0;
+  }
 }
